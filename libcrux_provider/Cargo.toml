@@ -11,11 +11,11 @@ repository = "https://github.com/cryspen/hpke-rs"
 
 [dependencies]
 hpke-rs-crypto = { version = "0.3.0", path = "../traits" }
-libcrux-ecdh = { version = "0.0.4", default-features = false }
-libcrux-hkdf = { version = "0.0.4" }
-libcrux-kem = { version = "0.0.4", default-features = false }
-libcrux-aead = { version = "0.0.4" }
-libcrux-traits = { version = "0.0.4", default-features = false }
+libcrux-ecdh = { git = "https://github.com/cryspen/libcrux", rev = "77f9a6783e03585cc1709840bbc23ee27a28e6ad", default-features = false }
+libcrux-hkdf = { git = "https://github.com/cryspen/libcrux", rev = "77f9a6783e03585cc1709840bbc23ee27a28e6ad" }
+libcrux-kem = { git = "https://github.com/cryspen/libcrux", rev = "77f9a6783e03585cc1709840bbc23ee27a28e6ad", default-features = false }
+libcrux-aead = { git = "https://github.com/cryspen/libcrux", rev = "77f9a6783e03585cc1709840bbc23ee27a28e6ad" }
+libcrux-traits = { git = "https://github.com/cryspen/libcrux", rev = "77f9a6783e03585cc1709840bbc23ee27a28e6ad", default-features = false }
 # Randomness
 rand = { version = "0.9", default-features = false }
 rand_core = { version = "0.9", features = ["os_rng"] }
